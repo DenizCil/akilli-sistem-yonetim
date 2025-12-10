@@ -9,7 +9,14 @@ const firebaseConfig = {
   appId: "1:981338101366:web:c8763a7c91c5c37309b157"
 };
 
+
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
 
+// Firebase'den sensorler verisini CANLI okuyan bölüm
+db.ref("sensorler").on("value", snapshot => {
+    const data = snapshot.val();
+    console.log("Firebase Veri:", data);
+    updateUI(data);
+});
