@@ -1,0 +1,9 @@
+{
+  "name": "Ak\u0131ll\u0131 Ev Paneli",
+  "short_name": "EvPanel",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f1724",
+  "description": "Ger\u00e7ek zamanl\u0131 ak\u0131ll\u0131 ev alarm paneli",
+  "icons": []
+}
